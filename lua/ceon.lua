@@ -1,13 +1,21 @@
 local M = {}
 
 local colors = {
-	black = "#000000",
+	black = "#1b1b26",
+	black1 = "#1c1c37",
+	black2 = "#8888aa",
+	cyan = "#00f8f8",
+	cyan1 = "#00baba",
+	cyan2 = "#007c7c",
+	cyan3 = "#003e3e",
 	white = "#ffffff",
 }
 
 local groups = {
 	Normal = { bg = colors.black, fg = colors.white },
 	EndOfBuffer = { bg = colors.black, fg = colors.white },
+	LineNr = { bg = colors.black, fg = colors.black2 },
+	StatusLine = { bg = colors.black1, fg = colors.white },
 }
 
 M.load = function()
